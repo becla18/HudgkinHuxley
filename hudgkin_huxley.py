@@ -16,7 +16,7 @@ def beta_n(V):
     return -0.002 * (V - 25) / (1 - np.exp((V-25) / 9))
 
 def beta_m(V):
-    return -0.124 * (V - 35) / (1 - np.exp((V+35) / 9))
+    return -0.124 * (V + 35) / (1 - np.exp((V+35) / 9))
 
 def beta_h(V):
     return 0.25 * np.exp((V + 62)/6) / np.exp((V + 90) / 12)
