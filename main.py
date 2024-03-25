@@ -5,8 +5,8 @@ from hudgkin_huxley import hudgkin_huxley_euler_step
 
 
 I_ext = 0.
-alpha = 0.000001
-time = np.arange(0, 10, alpha)
+alpha = 0.0001
+time = np.arange(0, 100, alpha)
 const_params = [55, 40, -77, 35, -65, 0.3, 1]
 init_state = [-60, 0, 0, 0]
 
