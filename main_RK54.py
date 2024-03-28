@@ -32,7 +32,7 @@ for i, I_ext in enumerate(I_ext_list[::-1]):
 plt.xlabel('t [ms]')
 plt.ylabel('V [mV]')
 plt.xlim(t_bounds[0], t_bounds[1])
-plt.ylim(-70, 40)
+# plt.ylim(-70, 40)
 plt.subplots_adjust(right=0.7)
 plt.legend(loc='upper right', bbox_to_anchor=(1.35, 1))
 plt.savefig('/Users/benja/Desktop/HH_V_pour_differents_I.png')
