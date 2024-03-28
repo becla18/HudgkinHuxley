@@ -27,7 +27,11 @@ for j in jac_at_fps:
 eigenvalues = np.array(eigenvalues)
 
 # show results
-plt.figure()
-plt.plot(I_ext_list, eigenvalues)
+plt.figure(figsize=(6, 4), dpi=300)
+plt.plot(I_ext_list, np.real(eigenvalues))
 plt.axhline(0, color='black', linewidth=0.5)
+plt.axvline(0, color='black', linewidth=0.5)
+plt.xlabel('$I_{ext}$')
+plt.ylabel('Re($λ$)')
+plt.xlim(-0.2, 0.5)
 plt.show()
